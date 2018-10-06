@@ -186,9 +186,9 @@ for j = x_axis % loop on all the 9 values of lambda
         
     end
   
-    Delay_Time = zeros(NSamples, 1); % the delay time vector – in–queue wait time and service time
-    Delay_Time_SJF = zeros(NSamples, 1); % the delay time vector – in–queue wait time and service time
-    Delay_Time_C = zeros(NSamples, 1); % the delay time vector – in–queue wait time and service time
+    Delay_Time = zeros(NSamples, 1); % the delay time vector in queue (wait time and service time)
+    Delay_Time_SJF = zeros(NSamples, 1); % the delay time vector in queue (wait time and service time)
+    Delay_Time_C = zeros(NSamples, 1); % the delay time vector in queue (wait time and service time)
     for i = 1:NSamples,
         Delay_Time(i) = W(i) + S(i); % Delay time is adding the wait time and the service time of each event
         Delay_Time_SJF(i) = WSJF(i) + SSJF(i); % Delay time is adding the wait time and the service time of each event
